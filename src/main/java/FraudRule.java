@@ -1,3 +1,3 @@
 public interface FraudRule {
-    boolean isFraud(Transaction t);
+    boolean isFraud(Transaction transaction);
 }
