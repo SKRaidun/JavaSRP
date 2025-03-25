@@ -5,4 +5,9 @@ public class Rule3 implements FraudRule {
         Trader trader = transaction.getTrader();
         return trader.getCity().equals("Sydney");
     }
+
+    @Override
+    public String getRuleName() {
+        return "Rule3";
+    }
 }

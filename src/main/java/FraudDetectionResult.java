@@ -1,18 +1,19 @@
 public class FraudDetectionResult {
 
-    private boolean fraud;
-    private String ruleName;
+    private FraudRule Rule;
 
-    public FraudDetectionResult(boolean fraud, String ruleName) {
-        this.fraud = fraud;
-        this.ruleName = ruleName;
+    public FraudDetectionResult(FraudRule Rule) {
+        this.Rule = Rule;
     }
 
     public boolean Fraud() {
-        return fraud;
+        if (Rule == null) {
+            return false;
+        }
+        return true;
     }
 
     public String Name() {
-        return ruleName;
+        return Rule.getRuleName();
     }
 }

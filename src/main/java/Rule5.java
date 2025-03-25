@@ -5,4 +5,9 @@ public class Rule5 implements FraudRule {
         Trader trader = transaction.getTrader();
         return (trader.getCity().equals("Germany") && transaction.getAmount() > 1000);
     }
+
+    @Override
+    public String getRuleName() {
+        return "Rule5";
+    }
 }

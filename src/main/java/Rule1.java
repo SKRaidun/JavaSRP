@@ -5,4 +5,9 @@ public class Rule1 implements FraudRule {
         Trader trader = transaction.getTrader();
         return trader.getFullName().equals("Pokemon");
     }
+
+    @Override
+    public String getRuleName() {
+        return "Rule1";
+    }
 }
