@@ -7,10 +7,7 @@ public class FraudDetectionResult {
     }
 
     public boolean Fraud() {
-        if (Rule == null) {
-            return false;
-        }
-        return true;
+        return Rule != null;
     }
 
     public String Name() {
